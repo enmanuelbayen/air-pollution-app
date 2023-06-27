@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { BsArrowRightCircle } from 'react-icons/bs';
 
 const CountriesItem = ({ data }) => (
-  <div>
+  <>
     <li className="country-list">
       <div>
         <span>{`Lat: ${data.latitude}`}</span>
@@ -14,14 +14,14 @@ const CountriesItem = ({ data }) => (
         </NavLink>
       </div>
       <div>
-        <p>img central</p>
+        <img src={`${data.image}`} alt={`${data.country}`} className="country-shape" />
       </div>
       <div>
         <h3>{data.country}</h3>
         <p>{data.capital}</p>
       </div>
     </li>
-  </div>
+  </>
 );
 
 CountriesItem.propTypes = {
@@ -30,6 +30,7 @@ CountriesItem.propTypes = {
     capital: PropTypes.string.isRequired,
     longitude: PropTypes.number.isRequired,
     latitude: PropTypes.number.isRequired,
+    image: PropTypes.string.isRequired,
   }).isRequired,
 };
 

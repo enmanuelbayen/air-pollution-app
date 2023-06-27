@@ -7,9 +7,11 @@ import { FaRegSun } from 'react-icons/fa';
 const Navbar = () => (
   <header className="header">
     <div className="nav-container flex">
-      <nav className="nav flex">
-        <BsChevronLeft className="backBttn" />
-        <NavLink to="/">Back</NavLink>
+      <nav className="nav">
+        <NavLink to="/">
+          <BsChevronLeft className="backBttn" />
+          Back
+        </NavLink>
       </nav>
       <NavLink to="/" className="logo">Most Recent data</NavLink>
       <div className="simbols flex">

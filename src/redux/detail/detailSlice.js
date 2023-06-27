@@ -17,8 +17,6 @@ export const fetchDetails = createAsyncThunk('details/fetchDetails', async ({ la
     );
 
     const { components } = response.data.list[0];
-    console.log('Response:', response); // Check the API response
-    console.log('Components:', components); // Check the components data
 
     const componentNames = {
       co: 'Carbon monoxide',
@@ -36,14 +34,9 @@ export const fetchDetails = createAsyncThunk('details/fetchDetails', async ({ la
       value,
     }));
 
-    console.log('Component Array:', componentArray);
-
     const { country, capital } = EuropeCountries.find(
       (data) => data.latitude.toString() === lat && data.longitude.toString() === lon,
     );
-
-    console.log('Country:', country); // Check the country
-    console.log('Capital:', capital); // Check the capital
 
     return [country, capital, componentArray];
   } catch (error) {
