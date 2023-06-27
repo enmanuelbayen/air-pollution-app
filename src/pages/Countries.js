@@ -1,9 +1,11 @@
 import React from 'react';
+import CountriesList from '../components/CountriesList';
 
-const countries = () => (
+const Countries = () => (
   <div>
-    <p>pais</p>
+    <h1>HOLA MUNDO</h1>
+    <CountriesList />
   </div>
 );
 
-export default countries;
+export default Countries;
