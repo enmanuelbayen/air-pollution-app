@@ -53,30 +53,26 @@ export const detailSlice = createSlice({
   initialState,
   reducers: {
     filterCountry: (state, action) => {
-      const newState = { ...state };
-      if (action.payload) {
-        newState.searchFilter = false;
-      } else {
-        newState.searchFilter = true;
-      }
-      return newState;
+      state.searchFilter = action.payload;
     },
   },
   extraReducers: (builder) => {
     builder
       .addCase(fetchDetails.pending, (state) => {
-        const newState = { ...state };
-        newState.isLoading = true;
-        return newState;
+        state.isLoading = true;
       })
       .addCase(fetchDetails.fulfilled, (state, action) => {
-        const newState = { ...state };
-        newState.isLoading = false;
+        state.isLoading = false;
         const [country, capital, array] = action.payload;
-        newState.country = country;
-        newState.capital = capital;
-        newState.details = array;
-        return newState;
+        state.country = country;
+        state.capital = capital;
+        state.details = array;
+      })
+      .addCase(fetchDetails.rejected, (state) => {
+        state.isLoading = false;
+        state.details = [];
+        state.country = '';
+        state.capital = '';
       });
   },
 });

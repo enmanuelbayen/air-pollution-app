@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
-import CountriesItem from '../components/CountriesItem.js';
+import CountriesItem from '../components/CountriesItem';
 
 test('renders component with correct data', () => {
   const component = renderer.create(
@@ -12,7 +12,7 @@ test('renders component with correct data', () => {
         country="Country"
         capital="Capital"
       />
-    </MemoryRouter>
+    </MemoryRouter>,
   );
 
   const tree = component.toJSON();

@@ -19,7 +19,7 @@ test('renders CountriesList component correctly', () => {
       <MemoryRouter>
         <CountriesList />
       </MemoryRouter>
-    </Provider>
+    </Provider>,
   );
 
   const tree = component.toJSON();
