@@ -6,7 +6,7 @@ Mobile version of SPA that indicates the levels of pollution in the air in the c
 
 <div align="center">
 
-  <h3 id="title"><b>Air Pollution metric</b></h3>
+  <h3 id="title"><b>SPA website</b></h3>
 
 </div>
 
@@ -63,15 +63,16 @@ Discover the current levels of pollution in the air with this mobile website, yo
 
 ### Key Features <a name="key-features"></a>
 
-1 Fetch API for pollution data
-2 Graph for pollution values
-3 Search bar
+1 Fetch API for pollution data<br>
+2 Graph for pollution values<br>
+3 Search bar<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Not yet.
+- [Live Demo](https://loquacious-madeleine-868f45.netlify.app/)
+- Project Loom video explaination [here]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,7 +95,7 @@ Use these commands:
 
 ```sh
   cd my-folder
-  git clone xxxxx
+  git clone git@github.com:enmanuelbayen/air-pollution-app.git
 ```
 
 ### Install
