@@ -1,14 +1,23 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { BsChevronLeft } from 'react-icons/bs';
+import { BiSolidMicrophone } from 'react-icons/bi';
+import { FaRegSun } from 'react-icons/fa';
 
 const Navbar = () => (
-  <header className="header flex">
+  <header className="header">
     <div className="nav-container flex">
-      <logo className="logo">CLEAN-AIR</logo>
-      <nav className="nav flex">
-        <NavLink to="/" className="home">Home</NavLink>
-        <NavLink to="/Details" className="details">Details</NavLink>
+      <nav className="nav">
+        <NavLink to="/">
+          <BsChevronLeft className="backBttn" />
+          Back
+        </NavLink>
       </nav>
+      <NavLink to="/" className="logo">Most Recent data</NavLink>
+      <div className="simbols flex">
+        <BiSolidMicrophone />
+        <FaRegSun />
+      </div>
     </div>
   </header>
 );

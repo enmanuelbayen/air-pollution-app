@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import React from 'react';
 import App from '../App';
 import Navigation from '../pages/Navigation';
+import Details from '../pages/Details';
 
 const router = createBrowserRouter([
   {
@@ -9,6 +10,14 @@ const router = createBrowserRouter([
     element: (
       <Navigation>
         <App />
+      </Navigation>
+    ),
+  },
+  {
+    path: '/Stats',
+    element: (
+      <Navigation>
+        <Details />
       </Navigation>
     ),
   },

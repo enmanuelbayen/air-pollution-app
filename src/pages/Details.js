@@ -1,8 +1,9 @@
 import React from 'react';
+import AirDetails from '../components/AirDetails';
 
 const Details = () => (
   <div>
-    <p>detalle</p>
+    <AirDetails />
   </div>
 );
 
