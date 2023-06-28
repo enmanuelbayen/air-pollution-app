@@ -2,10 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const AirItems = ({ detailItem }) => (
-  <li>
+  <li className="pollution-data flex">
     <p>{detailItem.name}</p>
-    <p>{detailItem.value}</p>
-    <span> μg/m3</span>
+    <div>
+      <p>
+        {detailItem.value}
+        μg/m3
+      </p>
+    </div>
   </li>
 );
 

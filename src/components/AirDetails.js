@@ -1,9 +1,17 @@
+/* eslint-disable */
 import React, { useEffect } from 'react';
+import { Doughnut } from 'react-chartjs-2';
+import {
+  Chart as ChartJS, ArcElement, Tooltip, Legend,
+} from 'chart.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
 import { fetchDetails } from '../redux/detail/detailSlice';
+import chartData from '../components/Chart';
 
 import AirItems from './AirItems';
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const AirDetails = () => {
   const {
@@ -13,6 +21,7 @@ const AirDetails = () => {
   const dispatch = useDispatch();
   const lat = searchParams.get('lat');
   const lon = searchParams.get('lon');
+  const infoArr = useSelector((state) => state.detail.details);
 
   useEffect(() => {
     if (!lat && !lon) {
@@ -32,6 +41,10 @@ const AirDetails = () => {
 
   return (
     <div>
+      <div className="chart-box">
+        <h2>Doughnut Chart</h2>
+        <Doughnut data={chartData(infoArr)} />
+      </div>
       <header>
         <div>
           <h2>

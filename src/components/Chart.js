@@ -4,14 +4,14 @@ const chartData = (infoArr) => ({
     {
       label: 'Quantity',
       data: [
-        infoArr.co,
-        infoArr.nh3,
-        infoArr.no,
-        infoArr.no2,
-        infoArr.o3,
-        infoArr.pm2_5,
-        infoArr.pm10,
-        infoArr.so2,
+        infoArr[0].value,
+        infoArr[1].value,
+        infoArr[2].value,
+        infoArr[3].value,
+        infoArr[4].value,
+        infoArr[5].value,
+        infoArr[6].value,
+        infoArr[7].value,
       ],
       backgroundColor: [
         'rgba(255, 99, 132, 0.4)',
