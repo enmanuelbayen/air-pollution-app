@@ -71,7 +71,7 @@ Discover the current levels of pollution in the air with this mobile website, yo
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]([https://loquacious-madeleine-868f45.netlify.app/](https://loquacious-madeleine-868f45.netlify.app))
+- [Live Demo](https://loquacious-madeleine-868f45.netlify.app/)
 - Project Loom video explaination [here]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
