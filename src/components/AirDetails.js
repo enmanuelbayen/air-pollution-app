@@ -42,16 +42,13 @@ const AirDetails = () => {
   return (
     <div>
       <div className="chart-box">
-        <h2>Doughnut Chart</h2>
         <Doughnut data={chartData(infoArr)} />
       </div>
       <header>
-        <div>
-          <h2>
+          <h2 className="country-capital">
             {`${country}/ `}
-            <span>{`${capital} air pollution statistics`}</span>
+            {`${capital} - Air pollution stats`}
           </h2>
-        </div>
       </header>
       <ul>
         {details && details.length > 0 ? (

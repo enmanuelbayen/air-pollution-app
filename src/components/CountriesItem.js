@@ -5,18 +5,18 @@ import { BsArrowRightCircle } from 'react-icons/bs';
 
 const CountriesItem = ({ data }) => (
   <>
-    <li className="country-list">
-      <div>
+    <li className="country-list flex">
+      <div className="country-list-box1 flex">
         <span>{`Lat: ${data.latitude}`}</span>
         <span>{`Lon: ${data.longitude}`}</span>
         <NavLink className="country-data" to={`/stats?lat=${data.latitude}&lon=${data.longitude}`}>
           <BsArrowRightCircle />
         </NavLink>
       </div>
-      <div>
+      <div className="country-list-box2">
         <img src={`${data.image}`} alt={`${data.country}`} className="country-shape" />
       </div>
-      <div>
+      <div className="country-list-box3">
         <h3>{data.country}</h3>
         <p>{data.capital}</p>
       </div>

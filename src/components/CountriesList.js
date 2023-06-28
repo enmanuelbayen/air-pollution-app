@@ -10,21 +10,17 @@ const CountriesList = () => {
 
   return (
     <div>
-      <div className="searchBar-container">
-        <div>
-          <div className="list-titleBox">
-            <h2 className="countryList-title">Details by countries</h2>
-            <form>
-              <CgSearch />
-              <input
-                type="text"
-                className="search-bar"
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder={`Search ${searchFilter ? 'capitals' : 'countries'}`}
-              />
-            </form>
-          </div>
-        </div>
+      <div className="searchBar-container flex">
+        <h2 className="countryList-title">Details by countries</h2>
+        <form>
+          <input
+            type="text"
+            className="search-bar"
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder={`  Search ${searchFilter ? 'capitals' : 'countries'}`}
+          />
+          <CgSearch />
+        </form>
       </div>
       <ul className="country-ul grid">
         {!searchFilter

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const AirItems = ({ detailItem }) => (
   <li className="pollution-data flex">
     <p>{detailItem.name}</p>
-    <div>
+    <div className="pollution-value">
       <p>
         {detailItem.value}
         μg/m3

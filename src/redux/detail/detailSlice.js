@@ -24,8 +24,8 @@ export const fetchDetails = createAsyncThunk('details/fetchDetails', async ({ la
       no2: 'Nitrogen dioxide',
       o3: 'Ozone',
       so2: 'Sulfur dioxide',
-      pm2_5: 'Fine particulate matter (PM2.5)',
-      pm10: 'Coarse particulate matter (PM10)',
+      pm2_5: 'Fine particulate matter',
+      pm10: 'Coarse particulate matter',
       nh3: 'Ammonia',
     };
 
