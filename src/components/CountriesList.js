@@ -17,7 +17,7 @@ const CountriesList = () => {
             type="text"
             className="search-bar"
             onChange={(e) => setSearch(e.target.value)}
-            placeholder={`  Search ${searchFilter ? 'capitals' : 'countries'}`}
+            placeholder="  Search countries"
           />
           <CgSearch />
         </form>

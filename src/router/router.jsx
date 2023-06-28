@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import React from 'react';
 import App from '../App';
 import Navigation from '../pages/Navigation';
-import Details from '../pages/Details';
+import AirDetails from '../components/AirDetails';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     path: '/Stats',
     element: (
       <Navigation>
-        <Details />
+        <AirDetails />
       </Navigation>
     ),
   },
