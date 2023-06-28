@@ -7,7 +7,7 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
 import { fetchDetails } from '../redux/detail/detailSlice';
-import chartData from '../components/Chart';
+import chartData from '../utility/chart';
 
 import AirItems from './AirItems';
 

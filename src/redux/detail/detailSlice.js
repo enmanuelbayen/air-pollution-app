@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 import EuropeCountries from '../../components/EuropeCountries';
 
 const initialState = {
@@ -12,11 +11,16 @@ const initialState = {
 
 export const fetchDetails = createAsyncThunk('details/fetchDetails', async ({ lat, lon }) => {
   try {
-    const response = await axios(
+    const response = await fetch(
       `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=0d5c80144b4da5bbc9a662a12cb13bd6`,
     );
 
-    const { components } = response.data.list[0];
+    if (!response.ok) {
+      throw new Error('Failed to fetch data');
+    }
+
+    const data = await response.json();
+    const { components } = data.list[0];
 
     const componentNames = {
       co: 'Carbon monoxide',
@@ -57,11 +61,6 @@ export const detailSlice = createSlice({
       }
       return newState;
     },
-    filterCapital: (state) => {
-      const newState = { ...state };
-      newState.searchFilter = false;
-      return newState;
-    },
   },
   extraReducers: (builder) => {
     builder
@@ -82,6 +81,6 @@ export const detailSlice = createSlice({
   },
 });
 
-export const { filterCapital, filterCountry } = detailSlice.actions;
+export const { filterCountry } = detailSlice.actions;
 
 export default detailSlice.reducer;
