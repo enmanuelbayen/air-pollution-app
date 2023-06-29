@@ -1,12 +1,12 @@
-# [XXX]
+# Air Pollution metric
 
-.............
+Mobile version of SPA that indicates the levels of pollution in the air in the countries of Europe (more continents will be added eventually) - React-Redux was used for the creation and ran Test using Jest.
 
 <a name="readme-top"></a>
 
 <div align="center">
 
-  <h3 id="title"><b>[XXX]</b></h3>
+  <h3 id="title"><b>SPA website</b></h3>
 
 </div>
 
@@ -34,8 +34,9 @@
 
 
 
-# 📖  [XXXX]   <a name="about-project"></a>
+# 📖  Air Pollution metric   <a name="about-project"></a>
 
+Discover the current levels of pollution in the air with this mobile website, you can see a graph indicating the distribution of the elements present in the region!
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,6 +44,7 @@
 - CSS
 - JS
 - React
+- Redux
 - Jest
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -61,15 +63,16 @@
 
 ### Key Features <a name="key-features"></a>
 
-1 ...
-2 .... 
-3 ...
+1 Fetch API for pollution data<br>
+2 Graph for pollution values<br>
+3 Search bar<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Not yet.
+- [Live Demo](https://loquacious-madeleine-868f45.netlify.app/)
+- Project Loom video explaination [here](https://www.loom.com/share/a8ee01666289482d947de9b117f306dd)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +95,7 @@ Use these commands:
 
 ```sh
   cd my-folder
-  git clone xxxxx
+  git clone git@github.com:enmanuelbayen/air-pollution-app.git
 ```
 
 ### Install
@@ -123,8 +126,6 @@ I use Githud pages for the deployment of this web page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Enmanuel Bayen**
@@ -144,19 +145,16 @@ I use Githud pages for the deployment of this web page.
 - [x] Desktop version
 
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome! Will help me a lot to improve my coding skills.
 
-Feel free to check the [issues page](../../issues/)
+Feel free to check the [issues page](https://github.com/enmanuelbayen/air-pollution-app/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ## ⭐️ Show your support <a name="support"></a>
@@ -170,7 +168,9 @@ If you like this project just keep an eye on the changes that I will bring over 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to my family and God for the opportunities to always improve despite adversity, my girlfriend and friends for being there for me, and Microverse for providing a platform to achieve this goal.
+- I would like to thank to my family and God for the opportunities to always improve despite adversity, my girlfriend and friends for being there for me, and Microverse for providing a platform to achieve this goal.
+
+- Thanks to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the author of the original design Under the [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

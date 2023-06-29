@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;700&family=Roboto+Slab:wght@300;400;600;700;900&family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  background-color: #5688e3;
+  color: #f5f8ff;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-bar: #4369b2;
+  --subtitle-size: 1rem;
+  --subtitle-weight: 500;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+/* Header */
+
+.header * {
+  background-color: var(--bg-bar);
+  font-size: 1rem;
+}
+
+.header {
+  background-color: var(--bg-bar);
+  padding: 2rem 0.7rem;
+}
+
+.nav-container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: var(--subtitle-size);
+  font-weight: var(--subtitle-weight);
+}
+
+.nav a {
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.backBttn {
+  font-size: 1.1rem;
+}
+
+.simbols {
+  gap: 2rem;
+}
+
+.simbols svg {
+  font-size: 1.5rem;
+}
+
+/* main page bg and search bar */
+
+.title-box {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+  padding: 0.5em 0 1.6em;
+}
+
+.title-box h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.title-box h2 {
+  font-size: var(--subtitle-size);
+  font-family: var(--subtitle-weight);
+}
+
+.home-bg {
+  max-width: 100%;
+}
+
+.searchBar-container {
+  padding: 0.7rem;
+  background-color: #35548b;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchBar-container * {
+  background-color: #35548b;
+}
+
+.search-bar {
+  background-color: #5688e3;
+  border: none;
+  border-radius: 6px;
+  padding: 1.3px;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.countryList-title {
+  font-size: var(--subtitle-size);
+  font-weight: var(--subtitle-weight);
+}
+
+/* country list */
+
+.country-ul {
+  grid-template-columns: 1fr 1fr;
+}
+
+.country-shape {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.country-list {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2em;
+  max-width: 100%;
+  padding: 1em;
+}
+
+.country-list-box1 {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.country-list-box1 span {
+  font-size: 0.7em;
+}
+
+.country-list-box3 {
+  text-align: end;
+}
+
+.country-list-box3 h3 {
+  font-size: 1.4em;
+}
+
+.chart-box * {
+  background-color: #000;
+  padding: 0.6rem 0;
+}
+
+.pollution-data * {
+  background-color: #3f63a5;
+}
+
+.country-list:nth-child(4n+1),
+.country-list:nth-child(4n+4) {
+  background-color: #3f63a5;
+}
+
+.country-list:nth-child(4n+1) *,
+.country-list:nth-child(4n+4) * {
+  background-color: #3f63a5;
+}
+
+.country-list:nth-child(4n+3),
+.country-list:nth-child(4n+2) {
+  background-color: #4067ae;
+}
+
+.country-list:nth-child(4n+3) *,
+.country-list:nth-child(4n+2) * {
+  background-color: #4067ae;
+}
+
+/* AIR POLLUTION DETAILS PAGE */
+
+.country-capital {
+  background-color: #35548b;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.4em 0.8em;
+}
+
+.pollution-data {
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3f63a5;
+  padding: 1rem 1.5rem;
+}
+
+.pollution-data p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.pollution-data:nth-child(odd) {
+  background-color: #4067ae;
+}
+
+.pollution-data:nth-child(odd) * {
+  background-color: #4067ae;
+}
